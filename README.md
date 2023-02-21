@@ -8,14 +8,14 @@ If you want to reuse our work, please cite it. An exemplary BibTex entry is list
 
 ## Annotation Format
 
-The images are annotated in the standard COCO format.
+The images are annotated in the standard COCO format. We also provide automatically generated YOLO annotations.
 
 ## Splits
 
 The dataset is split into three parts:
 
-- 3920 (70%) images for training
-- 840 (15%) images for development
+- 3922 (70%) images for training
+- 838 (15%) images for development
 - 840 (15%) images for validation
 
 ## Resolution
@@ -38,22 +38,42 @@ The reduced resolution dataset weighs in at 344 MB with an average of 62 kB per 
 
 ```
 .
-├── img                          # all images
-│   ├── full                     # full resolution (300 dpi) images  (coming soon)
+├── annotations                       # all annotations
+│   ├── coco                          # annotations in COCO format
+│   │   ├── dev.full.json             # full resolution development set
+│   │   ├── dev.reduced.json          # reduced resolution development set
+│   │   ├── train.full.json           # full resolution training set
+│   │   ├── train.reduced.json        # reduced resolution training set
+│   │   ├── val.full.json             # full resolution validation set
+│   │   └── val.reduced.json          # reduced resolution validation set
+│   └── yolo                          # annotations in YOLO format
+│       ├── labels
+│       │   ├── full                  # full resolution labels
+│       │   │   ├── P000053802-1.txt
+│       │   │   ├── ... (5598 more)
+│       │   │   └── P000237430-2.txt
+│       │   └── reduced               # reduced resolution labels
+│       │       ├── P000053802-1.txt
+│       │       ├── ... (5598 more)
+│       │       └── P000237430-2.txt
+│       ├── dev.full.txt              # full resolution development set
+│       ├── dev.reduced.txt           # reduced resolution development set
+│       ├── train.full.txt            # full resolution training set
+│       ├── train.reduced.txt         # reduced resolution training set
+│       ├── val.full.txt              # full resolution validation set
+│       └── val.reduced.txt           # reduced resolution validation set
+├── img                               # all images
+│   ├── full                          # full resolution (300 dpi) images  (coming soon)
 │   │   ├── P000053802-1.jpg
 │   │   ├── ... (5598 more)
 │   │   └── P000237430-2.jpg
-│   └── reduced                  # reduced resolution (150 dpi) images
+│   └── reduced                       # reduced resolution (150 dpi) images
 │       ├── P000053802-1.jpg
 │       ├── ... (5598 more)
 │       └── P000237430-2.jpg
-├── dev.full.json                # full resolution development set annotations
-├── dev.reduced.json             # reduced resolution development set annotations
-├── README.md                    # this README file
-├── train.full.json              # full resolution training set annotations
-├── train.reduced.json           # reduced resolution training set annotations
-├── val.full.json                # full resolution validation set annotations
-└── val.reduced.json             # reduced resolution validation set annotations
+├── resources                         # resources for README.md
+│   └── ...
+└── README.md                         # this README file
 ```
 
 ## Cite This
