@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: TabProDS
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+    - given-names: Michael
+      family-names: Sildatke
+      email: sildatke@fh-aachen.de
+      affiliation: FH Aachen University of Applied Sciences
+    - given-names: Jan
+      family-names: Delember
+      email: j.delember@student.maastrichtuniversity.nl
+      affiliation: Maastricht University
+repository-code: 'https://github.com/msildatke/TabProIS'
+date-released: 2023-02-06
+url: 'https://github.com/msildatke/TabProDS'

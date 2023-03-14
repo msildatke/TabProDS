@@ -24,7 +24,7 @@ The individual images were converted from PDF files in two different resolutions
 
 ### Full Resolution (300 dpi)
 
-The full resolution images typically have the dimensions 2480x2509 pixels (portrait). Some might have a landscape orientation or different dimensions as well as different aspect ratios altogether.
+The full resolution images typically have the dimensions 2480x3509 pixels (portrait). Some might have a landscape orientation or different dimensions as well as different aspect ratios altogether.
 
 In total, the full resolution dataset is 3.9 GB in size with an average of 670 kB per image.
 
